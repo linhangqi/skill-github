@@ -1,0 +1,4 @@
+interface:
+  display_name: "课程笔记整理"
+  short_description: "把录音转写、课件图片和文档整理成结构化笔记"
+  default_prompt: "Use $course-notes-orchestrator to turn dropped course transcripts and slide files into a reviewed Markdown note."
