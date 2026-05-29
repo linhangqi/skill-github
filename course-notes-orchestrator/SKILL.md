@@ -189,6 +189,15 @@ Image assignment rules:
 - if extracted text is sparse but images are many, create image-driven semantic chunks so all images are included
 - as a last resort, map images proportionally across semantic chunks
 
+Image supplement rules:
+
+- Do not only keep clean screenshots. If a blurry slide, whiteboard photo, or screen photo has an identifiable topic and its content has not been fully converted into the note text, keep it as original source material.
+- Attach these unclear but relevant images to the matching section, not to a generic appendix, and label them as `原始模糊资料页：<confirmed topic>`.
+- Do not invent unreadable text from unclear images. Preserve the image and describe only the confirmed topic in the caption.
+- Skip repeated images, pure title slides, decorative pages, and images whose content is already fully represented in the text unless the image carries extra visual structure.
+- For final document or Feishu/wiki insertion workflows, preserve the existing document structure: add image blocks and move the newly added image blocks to the matching section; do not overwrite, replace, or delete existing text blocks just to add images.
+- After image insertion, verify that headings are unchanged, count added images, and spot-check key sections so images are not piled up at the end.
+
 Preferred command:
 
 ```bash
