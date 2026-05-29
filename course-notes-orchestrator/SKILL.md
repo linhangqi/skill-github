@@ -189,14 +189,19 @@ Image assignment rules:
 - if extracted text is sparse but images are many, create image-driven semantic chunks so all images are included
 - as a last resort, map images proportionally across semantic chunks
 
-Image supplement rules:
+Image-aware note rules:
 
-- Do not only keep clean screenshots. If a blurry slide, whiteboard photo, or screen photo has an identifiable topic and its content has not been fully converted into the note text, keep it as original source material.
-- Attach these unclear but relevant images to the matching section, not to a generic appendix, and label them as `原始模糊资料页：<confirmed topic>`.
-- Do not invent unreadable text from unclear images. Preserve the image and describe only the confirmed topic in the caption.
-- Skip repeated images, pure title slides, decorative pages, and images whose content is already fully represented in the text unless the image carries extra visual structure.
-- For final document or Feishu/wiki insertion workflows, preserve the existing document structure: add image blocks and move the newly added image blocks to the matching section; do not overwrite, replace, or delete existing text blocks just to add images.
-- After image insertion, verify that headings are unchanged, count added images, and spot-check key sections so images are not piled up at the end.
+- Keep the original classroom-note workflow as the base. Image handling is an added capability, not a replacement for transcript-based note writing.
+- Treat course images as source material during slide digest, chunk planning, chunk writing, final writing, and review.
+- For each useful image, decide whether it should be text-extracted, visually preserved, or skipped:
+  - Clear text/table/diagram images: extract the knowledge into the note and keep the image only when the visual structure helps review.
+  - Blurry slides, whiteboard photos, or screen photos: if the topic is identifiable and the content has not been fully converted into note text, keep the image as original source material.
+  - Repeated images, pure title slides, decorative pages, and images already fully represented in the text: skip unless they carry extra visual structure.
+- Attach useful images to the matching semantic section or chunk; do not dump them into a generic appendix unless no section can be identified.
+- For unclear but relevant images, use a caption like `原始模糊资料页：<confirmed topic>` and do not invent unreadable text.
+- In Markdown outputs, prefer copying selected images into a local assets folder and referencing them with relative links near the relevant section.
+- In Feishu/wiki or other document insertion workflows, use the same section-matching logic, but preserve the existing document structure and only add/move new image blocks.
+- After image-aware output, verify image coverage: selected images are attached to the right sections, useful unclear images were not silently dropped, and the final note does not expose internal source maps unless requested.
 
 Preferred command:
 
